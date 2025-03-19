@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Decor</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
+        color: #fff; /* Text color */
+        background: radial-gradient(
+          circle,
+          #ff7e5f,
+          #feb47b
+        ); /* Radial gradient background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+      }
+
+      p {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .image-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .image-content div {
+        position: relative;
+        width: 300px; /* Set a fixed width for the image container */
+        text-align: center;
+      }
+
+      .image-content img {
+        width: 100%;
+        height: 200px; /* Set a fixed height for the images */
+        object-fit: cover; /* Ensure the images maintain their aspect ratio */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .image-content img:hover {
+        transform: scale(1.05);
+      }
+
+      .image-content span {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #555;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: -13.5em;
+        left: 2em;
+        width: 100vw;
+        height: max-content;
+        background: rgba(0, 0, 0, 0.7);
+        color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+        z-index: 1; /* Ensure the overlay is on top */
+      }
+
+      .image-content div:hover .image-overlay {
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        .image-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-content div {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home Décor</h1>
+    <p>
+      Transform your living space into a sanctuary of style with our exquisite
+      collection. From timeless elegance to modern trends, find the perfect
+      pieces to make your home uniquely yours.
+    </p>
+
+    <div class="image-content">
+      <div>
+        <img
+          src="images/home_decor/apartment-1851201_1920.jpg"
+          alt="Apartment"
+        />
+        <span>Apartment</span>
+        <div class="image-overlay">
+          <p>Ksh 15,000</p>
+          <p>Beautiful apartment decor to enhance your living space.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/bed-6830011_1280.jpg" alt="Architecture" />
+        <span>Architecture</span>
+        <div class="image-overlay">
+          <p>Ksh 10,000</p>
+          <p>Elegant architectural designs for your home.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/cup-791072_1280.jpg" alt="Chair" />
+        <span>Busket with a cup</span>
+        <div class="image-overlay">
+          <p>Ksh 5,000</p>
+          <p>
+            A beautiful busket for displaying items like books and a coffee cup
+            on the other side.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/flowers-7124742_1920.jpg" alt="Interior" />
+        <span>Interior</span>
+        <div class="image-overlay">
+          <p>Ksh 8,000</p>
+          <p>Beautiful interior decor to enhance your living space.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/house-6691124_640.jpg" alt="Interior" />
+        <span>Interior</span>
+        <div class="image-overlay">
+          <p>Ksh 12,000</p>
+          <p>Elegant interior designs for your home.</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/home_decor/indoor-decoration-6804164_1280.jpg"
+          alt="Interior"
+        />
+        <span>Caution on a chair</span>
+        <div class="image-overlay">
+          <p>Ksh 9,000</p>
+          <p>Stylish indoor decorations for your home.</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/home_decor/living-room-7825796_1920.jpg"
+          alt="Living Room Stylish"
+        />
+        <span>Living Room Stylish</span>
+        <div class="image-overlay">
+          <p>Ksh 20,000</p>
+          <p>Modern and stylish living room decor.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/nursery-1078923_1920.jpg" alt="Nursery" />
+        <span>Nursery</span>
+        <div class="image-overlay">
+          <p>Ksh 7,000</p>
+          <p>Beautiful nursery decor for your baby's room.</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/home_decor/winter-season-6769170_1280.jpg"
+          alt="Room"
+        />
+        <span>Room</span>
+        <div class="image-overlay">
+          <p>Ksh 11,000</p>
+          <p>Elegant room decor to enhance your living space.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_decor/house-6691124_640.jpg" alt="Sofa" />
+        <span>Stylish interior room</span>
+        <div class="image-overlay">
+          <p>Ksh 18,000</p>
+          <p>Comfortable and stylish room.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

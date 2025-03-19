@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Discover premium electronics, fashion, sports gear, and home decor all in one place. Explore exclusive deals and upgrade your lifestyle with top-quality products tailored to your needs."
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="nav-links">
+      <li>
+        <a href="electronics.html">
+          <img
+            src="images/icons8-electronics-96.png"
+            alt="Electronics"
+            class="nav-icon"
+          />
+          <span>Electronics</span>
+        </a>
+      </li>
+      <li>
+        <a href="fashion.html">
+          <img
+            src="images/fashion/icons8-womens-suit-48.png"
+            alt="Fashion"
+            class="nav-icon"
+          />
+          <span>Fashion</span>
+        </a>
+      </li>
+      <li>
+        <a href="home_decor.html">
+          <img
+            src="images/home_decor/icons8-curtain-96.png"
+            alt="Home Decor"
+            class="nav-icon"
+          />
+          <span>Home Decor</span>
+        </a>
+      </li>
+      <li>
+        <a href="sports.html">
+          <img
+            src="images/electronics/icons8-hammer-throw-skin-type-2-96.png"
+            alt="Sports"
+            class="nav-icon"
+          />
+          <span>Sports</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="head-section">
+      <h1 class="headline hero-section">
+        Discover Your Favorites at the Best Prices
+        <a href="electronics.html"
+          ><button class="animated-button">
+            <span>Shop Now</span>
+            <span></span></button
+        ></a>
+      </h1>
+    </div>
+    <div class="animation-container">
+      <div class="animated-text-container">
+        <span id="animated-text"
+          >Your one-stop shop for incredible deals across all categories. Unwrap
+          exclusive discounts this season and find everything you’ve been
+          dreaming of—all in one place!</span
+        >
+      </div>
+    </div>
+    <select class="options" id="categorySelect">
+      <option value="all" id="all">Explore Categories</option>
+      <option value="electronics.html" id="electronics">Electronics</option>
+      <option value="fashion.html" id="fashion">Fashion</option>
+      <option value="home_decor.html" id="home-decor">Home Decor</option>
+      <option value="sports.html" id="sports">Sports</option>
+    </select>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Your ultimate destination for premium electronics, trendsetting
+              fashion, dynamic sports gear, and stylish home decor! Whether
+              you're upgrading your gadgets, curating your wardrobe with the
+              latest styles, gearing up for an active lifestyle, or transforming
+              your living spaces, we've handpicked top-quality products to cater
+              to your every need. Dive into exclusive deals and bring home the
+              perfect fusion of innovation, elegance, and performance to elevate
+              your everyday life.
+            </p>
+            <div class="social">
+              <a href="https://www.facebook.com/prisc.phalis?mibextid=ZbWKwL"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a href="https://x.com/PPhalis?t=Hp0at9q3YmkDk7dQqTdbRg&s=09"
+                ><span class="fab fa-twitter"></span
+              ></a>
+              <a
+                href="https://www.instagram.com/waiphatechwebdevelopment?igsh=YzljYTk1ODg3Zg=="
+                ><span class="fab fa-instagram"></span
+              ></a>
+              <a href=""><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Nairobi, Kenya</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <a href="tel:+0792609946"><span class="text">0792609946</span></a>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <a href="mailto:priscphalis@gmail.com"
+                ><span class="text">priscphalis@gmail.com</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="https://formspree.io/f/xpwpwbqr" method="POST">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" name="email" required />
+              </div>
+              <div class="message">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" name="message" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit"
+            >Created By
+            <a href="https://www.codingnepalweb.com"
+              >WaiphaTech Web_developer</a
+            >
+            |
+          </span>
+          <span class="far fa-copyright"></span
+          ><span> 2025 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("categorySelect")
+        .addEventListener("change", function () {
+          var value = this.value;
+          if (value !== "all") {
+            window.location.href = value;
+          }
+        });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

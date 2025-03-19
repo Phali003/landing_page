@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
+        color: #fff; /* Text color */
+        background: radial-gradient(
+          circle,
+          #ff7e5f,
+          #feb47b
+        ); /* Radial gradient background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+      }
+
+      p {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .image-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .image-content div {
+        position: relative;
+        width: 300px; /* Set a fixed width for the image container */
+        text-align: center;
+      }
+
+      .image-content img {
+        width: 100%;
+        height: 200px; /* Set a fixed height for the images */
+        object-fit: cover; /* Ensure the images maintain their aspect ratio */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .image-content img:hover {
+        transform: scale(1.05);
+      }
+
+      .image-content span {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #555;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: -13.5em;
+        left: 1em;
+        width: 100%;
+        height: max-content;
+        background: rgba(0, 0, 0, 0.7);
+        color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+        z-index: 1; /* Ensure the overlay is on top */
+      }
+
+      .image-content div:hover .image-overlay {
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        .image-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-content div {
+          width: 80%; /* Adjust the width for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sports</h1>
+    <p>
+      Get the best deals on sports gear and equipment. From running shoes to
+      yoga mats, we have everything you need to stay active and fit.
+    </p>
+    <div class="image-content">
+      <div>
+        <img src="images/sports/ball-8279729.jpg" alt="Football" />
+        <span>Football</span>
+        <div class="image-overlay">
+          <p>Ksh 3,000</p>
+          <p>High-quality football for all your matches.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/darts-8905121_1280.jpg" alt="Darts" />
+        <span>Darts</span>
+        <div class="image-overlay">
+          <p>Ksh 1,500</p>
+          <p>Precision darts for competitive play.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/dirt-bike-1868996_1280.jpg" alt="Dirt Bike" />
+        <span>Dirt Bike</span>
+        <div class="image-overlay">
+          <p>Ksh 50,000</p>
+          <p>Durable dirt bike for off-road adventures.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/dumbbells-2465478_1280.jpg" alt="Dumbbells" />
+        <span>Dumbbells</span>
+        <div class="image-overlay">
+          <p>Ksh 2,000</p>
+          <p>High-quality dumbbells for strength training.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/golf-2571826_1920.jpg" alt="Golf" />
+        <span>Golf</span>
+        <div class="image-overlay">
+          <p>Ksh 10,000</p>
+          <p>Premium golf equipment for all skill levels.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/kite-surfing-2160946.jpg" alt="Kite Surfing" />
+        <span>Kite Surfing</span>
+        <div class="image-overlay">
+          <p>Ksh 15,000</p>
+          <p>Exciting kite surfing gear for water sports enthusiasts.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/man-8675446_1280.jpg" alt="Running" />
+        <span>Running</span>
+        <div class="image-overlay">
+          <p>Ksh 5,000</p>
+          <p>Comfortable running gear for all distances.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/sports/racket-6308994_1280.jpg" alt="Tennis" />
+        <span>Tennis</span>
+        <div class="image-overlay">
+          <p>Ksh 8,000</p>
+          <p>High-performance tennis racket for competitive play.</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/sports/skateboard-5563464_1920.jpg"
+          alt="Skateboarding"
+        />
+        <span>Skateboarding</span>
+        <div class="image-overlay">
+          <p>Ksh 7,000</p>
+          <p>Durable skateboard for tricks and cruising.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

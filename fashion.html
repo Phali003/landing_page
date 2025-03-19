@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
+        color: #fff; /* Text color */
+        background: radial-gradient(
+          circle,
+          #ff7e5f,
+          #feb47b
+        ); /* Radial gradient background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+      }
+
+      p {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .image-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .image-content div {
+        position: relative;
+        width: 300px; /* Set a fixed width for the image container */
+        text-align: center;
+      }
+
+      .image-content img {
+        width: 100%;
+        height: 200px; /* Set a fixed height for the images */
+        object-fit: cover; /* Ensure the images maintain their aspect ratio */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      /* Make specific images taller */
+      .image-content div:nth-child(1) img,
+      .image-content div:nth-child(5) img {
+        height: 250px; /* Slightly taller height */
+      }
+
+      .image-content img:hover {
+        transform: scale(1.05);
+      }
+
+      .image-content span {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #555;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: -13.5em;
+        left: 0;
+        width: 100%;
+        height: max-content;
+        background: rgba(0, 0, 0, 0.7);
+        color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+        z-index: 1; /* Ensure the overlay is on top */
+      }
+
+      .image-content div:hover .image-overlay {
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        .image-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-content div {
+          width: 80%; /* Adjust the width for smaller screens */
+        }
+
+        /* Reset the height for smaller screens */
+        .image-content div:nth-child(1) img,
+        .image-content div:nth-child(5) img {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fashion</h1>
+    <p>
+      Step into style with our exclusive fashion collection that blends modern
+      trends with timeless elegance. From everyday essentials to statement
+      pieces, we offer clothing and accessories that inspire confidence and
+      express your unique personality. Elevate your wardrobe with designs
+      crafted to suit every occasion—because your style tells your story.
+    </p>
+    <div class="image-content">
+      <div>
+        <img src="images/fashion/adult-1866798_1920.jpg" alt="Fashion 1" />
+        <span>Stylish and Comfortable</span>
+        <div class="image-overlay">
+          <p>Ksh 5,000</p>
+          <p>Elegant and comfortable outfit for any occasion.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/child-463558_1920.jpg" alt="Fashion 2" />
+        <span>Chic and Sophisticated</span>
+        <div class="image-overlay">
+          <p>Ksh 3,000</p>
+          <p>Chic and sophisticated attire for children.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/clothes-1839935_1920.jpg" alt="Fashion 3" />
+        <span>Timeless and Elegant</span>
+        <div class="image-overlay">
+          <p>Ksh 4,500</p>
+          <p>Timeless and elegant clothing for all seasons.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/girl-7571916_1920.jpg" alt="Fashion 4" />
+        <span>Modern and Versatile</span>
+        <div class="image-overlay">
+          <p>Ksh 6,000</p>
+          <p>Modern and versatile fashion for young women.</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/fashion/mannequin-8429771_1920 (1).jpg"
+          alt="Fashion 5"
+        />
+        <span>Stylish and Comfortable</span>
+        <div class="image-overlay">
+          <p>Ksh 7,000</p>
+          <p>Stylish and comfortable outfit for any occasion.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/girl-838260_1920.jpg" alt="Fashion 6" />
+        <span>Chic and Sophisticated</span>
+        <div class="image-overlay">
+          <p>Ksh 3,500</p>
+          <p>Chic and sophisticated attire for young girls.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/groom-1850932_1920.jpg" alt="Fashion 7" />
+        <span>Timeless and Elegant</span>
+        <div class="image-overlay">
+          <p>Ksh 8,000</p>
+          <p>Timeless and elegant groom's attire.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/man-9182458_1920.jpg" alt="Fashion 8" />
+        <span>Modern and Versatile</span>
+        <div class="image-overlay">
+          <p>Ksh 6,500</p>
+          <p>Modern and versatile fashion for men.</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/fashion/woman-8228748_1920.jpg" alt="Fashion 9" />
+        <span>Stylish and Comfortable</span>
+        <div class="image-overlay">
+          <p>Ksh 5,500</p>
+          <p>Stylish and comfortable outfit for women.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

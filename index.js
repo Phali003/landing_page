@@ -8,7 +8,7 @@ function animateText() {
   animatedTextElement.textContent = textToAnimate.slice(0, index);
   index++;
   if (index > textToAnimate.length) {
-    index = 0; // Reset to make it loop infinitely
+    index = 0;
   }
   setTimeout(animateText, 120);
 }
